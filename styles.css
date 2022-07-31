@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --bg: hsl(217, 54%, 11%);
+  --card: hsl(216, 50%, 16%);
+  --line: hsl(215, 29%, 35%);
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  font-family: 'Outfit', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+  gap: 4rem;
+  flex-direction: column;
+  line-height: 1.5;
+  /* background: linear-gradient(180deg, var(--bg) 0%, var(--line) 100%); */
+  background: linear-gradient(180deg, #0c1a30 0%, #023c83 100%);
+}
+
+main{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  max-width: 22rem;
+  padding: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: linear-gradient(161.11deg, #13396b -0.73%, rgba(21, 39, 63, 0.3) 101.82%);
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.item-name {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.item-description {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.price-infos{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.4rem;
+  border-bottom:  solid 1px hsl(215, 29%, 35%);
+}
+
+.price-item{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 50%;
+}
+.price{
+  font-weight: 600;
+  color: var(--cyan)
+}
+.days-left{
+  color: var(--blue);
+  font-weight: 300;
+}
+.price-item img{
+  transition: ease-in-out 0.4s;
+}
+.price-item img:hover{
+  transform: rotate(180deg);
+}
+
+.second-item{
+  justify-content: flex-end;
+}
+
+.card-image {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.user-infos{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-infos img {
+  width: 3rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.user-infos p {
+  color: var(--blue);
+}
+
+.user-infos p span {
+  color: var(--white);
+}
+
+.attribution{
+  color: white
+}
+
+.attribution a{
+  color: var(--cyan);
+}
